@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+}
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.buttonN {
+  display: inline-block;
+  /* padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem; */
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.buttonN:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* // background-color: yellow;  */
+  /* Replace $color with a specific color value */
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.buttonN:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  /* background-color: green; */
+  /* Replace with a darker shade of $color */
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+/* .buttonN:hover {
+  color: #fff;
+} */
+
+.buttonN:hover:before {
+  width: 100%;
+}
+
+.card_bg {
+  background: linear-gradient(90deg, rgba(28,83,147,1) 2%, rgba(121,110,99,1) 46%, rgba(30,70,115,1) 97%);
+  background: radial-gradient(circle, rgba(28,83,147,1) 0%, rgba(69,64,59,1) 49%, rgba(30,70,115,1) 71%);
+  background: radial-gradient(circle, rgba(121,110,99,1) 0%, rgba(28,83,147,1) 100%);
+  background: radial-gradient(circle, rgba(121,110,99,1) 0%, rgba(3,21,43,1) 100%);
+  background: radial-gradient(circle, rgba(121,110,99,1) 0%, rgba(3,21,43,1) 70%);
+  background: radial-gradient(circle, rgba(88,69,51,1) 0%, rgba(3,21,43,1) 70%);
+
+}
+
+.btn_link {
+  /* border-radius: 4px;
+  background-color: #5ca1e1; */
+  border: none;
+  text-align: center;
+  /* font-size: 32px; */
+  /* padding: 16px;
+  width: 220px; */
+  transition: all 0.5s;
+  cursor: pointer;
+  /* margin: 36px; */
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.btn_link{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn_link:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  /* top: 10px; */
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn_link:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.btn_link:hover:after {
+  opacity: 1;
+  right: 10px;
+}
