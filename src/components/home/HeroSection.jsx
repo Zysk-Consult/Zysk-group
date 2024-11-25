@@ -3,7 +3,7 @@ import HeroSlider from './HeroSlider'
 
 const HeroSection = () => {
     return (
-        <div className='min-h-[90vh] '>
+        <div className='min-h-[90vh] mb-12'>
             <div className='container'>
                 <div className="md:flex">
                     <div className="md:w-1/2 text-tertiary py-12">
