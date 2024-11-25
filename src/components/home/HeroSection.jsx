@@ -1,4 +1,5 @@
 import React from 'react'
+import HeroSlider from './HeroSlider'
 
 const HeroSection = () => {
     return (
@@ -19,7 +20,9 @@ const HeroSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:w-1/2"></div>
+                    <div className="md:w-1/2">
+                        <HeroSlider />
+                    </div>
                 </div>
             </div>
         </div>

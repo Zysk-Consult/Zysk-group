@@ -38,7 +38,7 @@ const Footer = () => {
                             <div className="md:w-1/2">
                                 <p className='uppercase manrope mb-3'>Newsletter</p>
                                 {/* <p className='uppercase text-3xl'>Stay Informed</p> */}
-                                <div className=" w-4/5">
+                                <div className=" md:w-4/5">
                                     <form>
                                         <div className='my-4 relative'>
                                             <input className='focus-visible:outline-0 w-full py-3 border-alt border pr-[120px] bg-primary/50 rounded-full px-3' type="text" />
@@ -67,7 +67,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="flex justify-between">
-                            <div className="flex">© {date.getFullYear()} Zyst Group Limited</div>
+                            <div className="flex">© {date.getFullYear()} Zysk Group Limited</div>
                             <p className="flex">Website by <Link className='hover:text-alt' to={""}> Renzokins </Link></p>
                         </div>
                     </div>
