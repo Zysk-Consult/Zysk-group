@@ -22,7 +22,7 @@ export const navLinks = [
             },
             {
                 text: "Zysk Foods",
-                link: "/technology"
+                link: "/foods"
             },
             {
                 text: "Zysk Construction $ Real Estate",

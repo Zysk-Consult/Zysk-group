@@ -6,11 +6,11 @@ const HeroSection = () => {
         <div className='min-h-[90vh] mb-12'>
             <div className='container'>
                 <div className="md:flex">
-                    <div className="md:w-1/2 text-tertiary py-12">
+                    <div className="md:w-1/2 text-tertiary py-12 md:pr-8">
                         <h1 className='text-4xl text-cente md:text-5xl leading-normal playfair'>
                             Unlocking Opportunities <br /> Across Industries
                         </h1>
-                        <p className='my-8 text-alt'>Zysk Group is a global leader in delivering cutting-edge technology, <br /> food
+                        <p className='my-8 text-alt text-lg'>Zysk Group is a global leader in delivering cutting-edge technology, <br /> food
                             innovation, real estate solutions, and investment opportunities.</p>
                         <div className="flex justify-center">
                             <div className="group">

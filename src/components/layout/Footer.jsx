@@ -37,10 +37,9 @@ const Footer = () => {
                             </div>
                             <div className="md:w-1/2">
                                 <p className='uppercase manrope mb-3'>Newsletter</p>
-                                {/* <p className='uppercase text-3xl'>Stay Informed</p> */}
                                 <div className=" md:w-4/5">
                                     <form>
-                                        <div className='my-4 relative'>
+                                        <div className='my-4 relative overflow-hidden'>
                                             <input className='focus-visible:outline-0 w-full py-3 border-alt border pr-[120px] bg-primary/50 rounded-full px-3' type="text" />
                                             <div className="absolute right-0 h-full bottom-0">
                                                 <button to={""} className='btn_link rounded-full bg-alt text-tertiary h-full px-6 min-w-[120px] hover:text-tertiary'><span>Subscribe</span></button>
