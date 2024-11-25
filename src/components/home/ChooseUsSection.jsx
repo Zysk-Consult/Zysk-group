@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const ChooseUsSection = () => {
     return (
         <div>
-            <div className="container">
+            <div id='update' className="container">
                 <div className="bg-white/10 rounded-3xl py-12">
                     <h3 className="text-center text-2xl md:text-3xl playfair text-secondary">Why Choose Us?:</h3>
                     <div className="grid md:grid-cols-3 gap-5 my-10">

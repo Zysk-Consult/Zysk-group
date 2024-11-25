@@ -13,23 +13,23 @@ export default function HeroSlider() {
             groupTitle: "Technology"
         },
         {
-            id: 1,
+            id: 3,
             src: imag2,
             groupTitle: "Consulting"
         },
         {
-            id: 1,
+            id: 3,
             src: imag3,
             groupTitle: "Food Processing"
         },
         {
-            id: 1,
-            src: imag1,
+            id: 4,
+            src: imag4,
             groupTitle: "Construction"
         },
         {
-            id: 1,
-            src: imag1,
+            id: 5,
+            src: imag5,
             groupTitle: "Capital Investment"
         },
     ]
@@ -38,6 +38,7 @@ export default function HeroSlider() {
             {
                 images.map((each) => (
                     <img
+                    key={each.id}
                         src={each.src}
                         alt={each.groupTitle}
                         className="h-full w-full object-cover"

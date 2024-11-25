@@ -5,12 +5,12 @@ export const navLinks = [
     {
         id: "1",
         text: "About Us",
-        link: "/about"
+        link: "#about"
     },
     {
         id: "2",
         text: "Our Companies",
-        link: "/companies",
+        link: "/",
         subNav: [
             {
                 text: "Zysk Technologies",
@@ -37,19 +37,19 @@ export const navLinks = [
     {
         id: "3",
         text: "Services",
-        link: "/services",
+        link: "#service",
         subNav: null
     },
     {
         id: "4",
         text: "News & Updates",
-        link: "/news",
+        link: "#update",
         subNav: null
     },
     {
         id: "5",
         text: "Contact Us",
-        link: "/contact",
+        link: "#contact",
         subNav: null
     },
 ]

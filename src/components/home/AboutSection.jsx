@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutSection = () => {
     return (
-        <div className='mb-20'>
+        <div id='about' className='mb-20'>
             <div className="container">
                 <h3 className="text-center text-2xl md:text-3xl playfair text-tertiary">About Zysk Group:</h3>
                 <div className="flex justify-center my-6">

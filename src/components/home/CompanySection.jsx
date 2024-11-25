@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const CompanySection = () => {
     return (
-        <div>
+        <div id='service'>
             <div className="container">
                 <h3 className="text-center text-2xl md:text-3xl playfair text-tertiary">Our Companies:</h3>
                 {/* <div className="flex justify-center my-8">

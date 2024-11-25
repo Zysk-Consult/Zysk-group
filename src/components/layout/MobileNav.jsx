@@ -6,6 +6,9 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { FaBars } from "react-icons/fa";
+import { navLinks } from "../../utils/constant";
+import { IoMdArrowDropdown } from "react-icons/io";
+import MobileSubLinks from "./MobileSubLinks";
 
 export default function MobileNav() {
   const [open, setOpen] = React.useState(false);
@@ -22,7 +25,7 @@ export default function MobileNav() {
             <Typography variant="h5" className="text-tertiary">
               Zysk Groups
             </Typography>
-            <IconButton variant="text" color="blue-gray" onClick={closeDrawer}>
+            <IconButton variant="text" className="text-secondary" onClick={closeDrawer}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -39,15 +42,21 @@ export default function MobileNav() {
               </svg>
             </IconButton>
           </div>
-          <Typography color="gray" className="mb-8 pr-4 font-normal">
-            Material Tailwind features multiple React and HTML components, all
-            written with Tailwind CSS classes and Material Design guidelines.
-          </Typography>
-          <div className="flex gap-2">
-            <Button size="sm" variant="outlined">
-              Documentation
-            </Button>
-            <Button size="sm"><FaBars /></Button>
+          <div>
+            <ul className="text-xl text-tertiary">
+              {navLinks.map((each) => {
+                if (each.subNav) {
+                  return (
+                    <li key={each.id}>
+                      <MobileSubLinks each={each} />
+                    </li>)
+                } else return (
+                  <li onClick={closeDrawer} key={each.id} className="mb-4 hover:text-secondary">
+                    <a href={each.link}>{each.text}</a>
+                  </li>
+                )
+              })}
+            </ul>
           </div>
         </div>
       </Drawer>
