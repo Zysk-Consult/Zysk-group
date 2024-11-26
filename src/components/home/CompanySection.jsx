@@ -18,7 +18,7 @@ const CompanySection = () => {
         {
             id: 2,
             title: "Zysk Consulting",
-            desc: "Zysk Consulting services provide strategic guidance and operational expertise to help businesses navigate complex challenges and achieve their goals. Our experienced consultants offer a wide range of services, including business strategy, financial advisory, and organizational development.",
+            desc: "Zysk Consulting services provide strategic guidance and operational expertise to help businesses navigate complex challenges and achieve their goals. Our experienced consultants offer a wide range of services, including business strategy, health care interview preping, and organizational development.",
             icon: <FaUsersGear size={50} />,
             link: "/consulting"
         },
@@ -32,7 +32,7 @@ const CompanySection = () => {
         {
             id: 4,
             title: "Zysk Constructions",
-            desc: "Zysk  Construction division specializes in delivering innovative and sustainable construction solutions. Our experienced team of engineers and builders is dedicated to delivering projects on time and within budget, while maintaining the highest standards of quality and safety. 1 ",
+            desc: "Zysk  Construction division specializes in delivering innovative and sustainable construction solutions. Our experienced team of engineers and builders is dedicated to delivering projects on time and within budget, while maintaining the highest standards of quality and safety.",
             icon: <IoMdConstruct size={50} />,
             link: "/constructions"
         },

@@ -1,8 +1,14 @@
 import React from 'react'
 import image from "../assets/jpg/2.jpg"
+import { Helmet } from 'react-helmet-async'
 const ZyskConsult = () => {
     return (
         <main className='bg-primary text-tertiary'>
+            <Helmet>
+               <title>Zysk Consultancy | Job Application Assistance | Career Coaching"</title>
+                <meta name="description" content="Zysk Consultancy: Your trusted partner for seamless immigration and job placement. We simplify complex processes, connect you with top employers, and guide you every step of the way." />
+                <meta name="keywords" content="Zysk Group, job application, career coaching, career advice, interview preping" />
+            </Helmet>
             <div className='py-1'>
                 <div className="relative">
                     <img src={image} className='w-full md:h-[70vh] object-cover' alt="" />

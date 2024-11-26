@@ -1,8 +1,14 @@
 import React from 'react'
 import image from "../assets/jpg/5.jpg"
+import { Helmet } from 'react-helmet-async'
 const ZyskCapital = () => {
     return (
         <main className='bg-primary text-tertiary'>
+            <Helmet>
+                <title>Zysk Capital | Capital Investment Solutions | Financial Services"</title>
+                <meta name="description" content="Zysk Capital: Empower your business with expert insights and innovative solutions in tangible asset markets. From real estate to infrastructure, we provide the knowledge and tools you need to succeed." />
+                <meta name="keywords" content="Zysk Group, capital investment, financial services, investment solutions," />
+            </Helmet>
             <div className='py-1'>
                 <div className="relative">
                     <img src={image} className='w-full md:h-[70vh] object-cover' alt="" />

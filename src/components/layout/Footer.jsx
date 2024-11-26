@@ -53,7 +53,10 @@ const Footer = () => {
                         <div className="flex justify-center my-5">
                             <ul className="md:flex text-center">
                                 {navLinks.map((each) => (
-                                    <li key={each.id} className='group text-tertiary md:w-[fit-content] text-lg font-normal relative pb- mr-3'> <Link to={"#"} className='tracking-[0.1rem]'>{each.text.toUpperCase()}</Link> <div className="absolute bottom-0 w-[0px] transition-all group-hover:w-full pt-[2px] bg-white"></div> </li>
+                                    <li key={each.id} className='group text-tertiary md:w-[fit-content] text-lg font-normal relative pb- mr-3'>
+                                        <a href={each.link} className='tracking-[0.1rem]'>{each.text.toUpperCase()}</a>
+                                        <div className="absolute bottom-0 w-[0px] transition-all group-hover:w-full pt-[2px] bg-white"></div>
+                                    </li>
                                 ))}
                             </ul>
                         </div>

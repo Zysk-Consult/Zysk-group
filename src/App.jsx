@@ -7,6 +7,7 @@ import ZyskConsult from './pages/ZyskConsult'
 import ZyskFoods from './pages/ZyskFoods'
 import ZyskConstruction from './pages/ZyskConstruction'
 import ZyskCapital from './pages/ZyskCapital'
+import { HelmetProvider } from 'react-helmet-async'
 // import Aos from 'aos';
 // import 'aos/dist/aos.css';
 // import 'react-toastify/dist/ReactToastify.css';
@@ -38,18 +39,20 @@ function App() {
         theme="light"
         transition:Bounce
       /> */}
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path='/technology' element={<ZyskTech />} />
-            <Route path='/consulting' element={<ZyskConsult />} />
-            <Route path='/foods' element={<ZyskFoods />} />
-            <Route path='/constructions' element={<ZyskConstruction />} />
-            <Route path='/capital' element={<ZyskCapital />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <HelmetProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path='/technology' element={<ZyskTech />} />
+              <Route path='/consulting' element={<ZyskConsult />} />
+              <Route path='/foods' element={<ZyskFoods />} />
+              <Route path='/constructions' element={<ZyskConstruction />} />
+              <Route path='/capital' element={<ZyskCapital />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </HelmetProvider>
     </div>
   )
 }
