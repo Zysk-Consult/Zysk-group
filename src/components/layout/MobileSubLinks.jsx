@@ -28,7 +28,7 @@ export default function MobileSubLinks({ each }) {
     return (
         <>
             <Accordion  open={open === 1} icon={<Icon id={1} open={open} />}>
-                <AccordionHeader className="text-tertiary hover:text-secondary border-b-0" onClick={() => handleOpen(1)}>{each.text}</AccordionHeader>
+                <AccordionHeader className="text-tertiary hover:text-secondary border-b-0 text-lg font-medium" onClick={() => handleOpen(1)}>{each.text}</AccordionHeader>
                 <AccordionBody>
                     <ul>
                     {each.subNav?.map((sub) => (
