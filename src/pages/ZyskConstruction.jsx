@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import image from "../assets/jpg/4.jpg";
 import { Helmet } from 'react-helmet-async';
 
 const ZyskConstruction = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <main className='bg-primary text-tertiary'>
             <Helmet>
-                <title>Zysk Construction | Commercial & Residential Construction Services"</title>
+                <title>Zysk Construction | Commercial & Residential Construction Services</title>
                 <meta name="description" content="Zysk Construction: Your trusted partner for top-quality construction and real estate solutions. From concept to completion, we deliver excellence. Contact us today for a free consultation." />
                 <meta name="keywords" content="Zysk Group, construction, real estate, building," />
             </Helmet>

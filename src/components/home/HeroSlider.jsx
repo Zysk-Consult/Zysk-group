@@ -34,7 +34,7 @@ export default function HeroSlider() {
         },
     ]
     return (
-        <Carousel autoplay={true} className="rounded-xl">
+        <Carousel prevArrow={false} nextArrow={false} navigation={false} loop autoplay={true} className="rounded-xl">
             {
                 images.map((each) => (
                     <img

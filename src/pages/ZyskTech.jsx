@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import image from "../assets/jpg/1.jpg"
 import { Helmet } from 'react-helmet-async'
 const ZyskTech = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <main className='bg-primary text-tertiary'>
-             <Helmet>
+            <Helmet>
                 <title>Zysk Technoloy | Technology Solutions Providers | Offers IT Consulting</title>
                 <meta name="description" content="Zysk Technology: Builders of innovative tech solutions,  Get started today" />
                 <meta name="keywords" content="technology consulting, software development, web development, IT support" />

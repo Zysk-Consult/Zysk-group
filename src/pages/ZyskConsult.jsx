@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import image from "../assets/jpg/2.jpg"
 import { Helmet } from 'react-helmet-async'
 const ZyskConsult = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <main className='bg-primary text-tertiary'>
             <Helmet>
