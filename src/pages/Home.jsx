@@ -4,6 +4,7 @@ import AboutSection from '../components/home/AboutSection'
 import CompanySection from '../components/home/CompanySection'
 import ChooseUsSection from '../components/home/ChooseUsSection'
 import { Helmet } from 'react-helmet-async'
+import ServiceSections from '../components/home/ServiceSections'
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             </Helmet>
             <div className=''>
                 <HeroSection />
+                <ServiceSections />
                 <AboutSection />
                 <CompanySection />
                 <ChooseUsSection />

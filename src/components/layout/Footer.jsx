@@ -61,13 +61,13 @@ const Footer = () => {
                             </ul>
                         </div>
                         <hr />
-                        <div className="flex justify-center my-8">
+                        {/* <div className="flex justify-center my-8">
                             <ul className="flex text-center">
                                 {socials.map((social) => (
                                     <Link to={"#"} key={social.name} className='mr-5 text-3xl hover:text-secondary transition-all'>{social.icon}</Link>
                                 ))}
                             </ul>
-                        </div>
+                        </div> */}
                         <div className="flex justify-between">
                             <div className="flex">© {date.getFullYear()} Zysk Group Limited</div>
                             <p className="flex">Website by <Link className='hover:text-alt' to={""}> Renzokins </Link></p>

@@ -9,6 +9,9 @@ export default withMT({
         secondary: "#E9B585",
         tertiary: "#FDE4D2",
         alt: "#c2752e"
+      },
+      screens: {
+        'desktop': '1200px',
       }
     },
   },

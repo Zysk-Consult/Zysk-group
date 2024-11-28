@@ -43,6 +43,13 @@ const CompanySection = () => {
             icon: <BsCurrencyExchange size={50} />,
             link: "capital"
         },
+        {
+            id: 6,
+            title: "Zysk Group",
+            desc: "Zysk Group is a dynamic and diversified conglomerate with a strong presence across multiple industries. The company is committed to delivering innovative solutions and driving sustainable growth. With a focus on technology, consulting, food processing, construction, and capital investment, Zysk Group is poised to shape the future of business.",
+            icon: <BsCurrencyExchange size={50} />,
+            link: "/"
+        },
     ]
     return (
         <div id='service'>
@@ -54,7 +61,7 @@ const CompanySection = () => {
                 <div className="grid md:grid-cols-3 gap-8 my-16">
                     {groupData.map((group) => {
                         return (
-                            <div className="rounded-xl hover:scale-[1.01] hover:bg-black/50 transition-all p-4 shadow-2xl hover:shadow-black/50 bg-black/40">
+                            <div key={group.id} className="rounded-xl hover:scale-[1.01] hover:bg-black/50 transition-all p-4 shadow-2xl hover:shadow-black/50 bg-black/40">
                                 <div className="md:flex flex-col justify-between items-between h-full">
                                     <div className="">
                                         <h6 className="text-center text-lg font-bold mb-5">{group.title}</h6>
@@ -65,7 +72,7 @@ const CompanySection = () => {
                                         </div>
                                         <p className='mb-5'>{group.desc}</p>
                                     </div>
-                                <Link to={group.link} className='btn_link py-4 w-[130px] text-alt hover:text-tertiary'><span>Learn more</span></Link>
+                                <Link to={group.link} className='btn_link py-3 w-[130px] text-alt bg-tertiary/10 rounded-full hover:text-tertiary'><span>Learn more</span></Link>
                                 </div>
                             </div>
                         )
