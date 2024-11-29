@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import HeroSection from '../components/home/HeroSection'
 import AboutSection from '../components/home/AboutSection'
 import CompanySection from '../components/home/CompanySection'
 import ChooseUsSection from '../components/home/ChooseUsSection'
 import { Helmet } from 'react-helmet-async'
 import ServiceSections from '../components/home/ServiceSections'
+import ContactSection from '../components/home/ContactSection'
+import { ResourceContext } from '../utils/ResourceContext'
 
 const Home = () => {
+    const { setToggleNav } = useContext(ResourceContext)
+    useEffect(() => {
+        setToggleNav(true)
+    }, [])
+
     return (
         <main className='text-tertiary pb-16 bg-primary'>
             <Helmet>
@@ -20,6 +27,7 @@ const Home = () => {
                 <AboutSection />
                 <CompanySection />
                 <ChooseUsSection />
+                <ContactSection />
             </div>
         </main>
     )

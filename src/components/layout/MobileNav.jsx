@@ -10,7 +10,7 @@ import { navLinks } from "../../utils/constant";
 import { IoMdArrowDropdown } from "react-icons/io";
 import MobileSubLinks from "./MobileSubLinks";
 
-export default function MobileNav() {
+export default function MobileNav({ navToggle }) {
   const [open, setOpen] = React.useState(false);
 
   const openDrawer = () => setOpen(true);
@@ -51,7 +51,7 @@ export default function MobileNav() {
                       <MobileSubLinks each={each} />
                     </li>)
                 } else return (
-                  <li onClick={closeDrawer} key={each.id} className="mb-4 hover:text-secondary">
+                  <li onClick={closeDrawer} key={navToggle ? each.id : "/"} className="mb-4 hover:text-secondary">
                     <a href={each.link}>{each.text}</a>
                   </li>
                 )

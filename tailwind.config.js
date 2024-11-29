@@ -10,9 +10,9 @@ export default withMT({
         tertiary: "#FDE4D2",
         alt: "#c2752e"
       },
-      screens: {
-        'desktop': '1200px',
-      }
+      // screens: {
+      //   'desktop': '1200px',
+      // }
     },
   },
   plugins: [],

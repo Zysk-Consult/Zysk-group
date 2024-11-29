@@ -1,10 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import image from "../assets/jpg/4.jpg";
 import { Helmet } from 'react-helmet-async';
+import { ResourceContext } from '../utils/ResourceContext';
 
 const ZyskConstruction = () => {
+    const { setToggleNav } = useContext(ResourceContext)
     useEffect(() => {
         window.scrollTo(0, 0);
+        setToggleNav(false);
     }, []);
     return (
         <main className='bg-primary text-tertiary'>

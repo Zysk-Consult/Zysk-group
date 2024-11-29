@@ -5,7 +5,7 @@ const AboutSection = () => {
         <div id='about' className='mb-20 '>
             <div className="container">
                 <div className=" bg-white/10 py-16 rounded-2xl px-4">
-                    <h3 className="text-center text-2xl md:text-3xl playfair text-tertiary">About Zysk Group:</h3>
+                    <h3 className="text-center text-2xl md:text-3xl playfair text-secondary">About Zysk Group:</h3>
                     <div className="flex justify-center my-6">
                         <p className="text-center md:w-3/4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit reiciendis possimus praesentium, optio vero! Praesentium omnis, sed labore, quod inventore magni officiis eius temporibus libero soluta sit totam? Cum.</p>
                     </div>

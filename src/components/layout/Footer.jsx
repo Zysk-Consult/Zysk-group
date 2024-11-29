@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import NavItem from './NavItem'
 import { navLinks } from '../../utils/constant'
 import { FaFacebook, FaLinkedin, FaTelegram } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
+import { ResourceContext } from '../../utils/ResourceContext'
 const date = new Date();
 const Footer = () => {
+    const { toggleNav } = useContext(ResourceContext);
+
     const socials = [
         {
             name: "Facebook",
@@ -25,15 +28,17 @@ const Footer = () => {
         },
     ]
     return (
-        <footer id='contact' className='bg-primary text-white'>
+        <footer className='bg-primary text-white'>
             <div className="py-1 bg-black/30">
                 <div className="my-12">
                     <div className="container playfair">
                         <div className="md:flex mb-5">
-                            <div className="md:w-1/2 md:pr-16">
-                                <p><b>Location: </b> Constitution Ave, Central Business Dis, Abuja 900211, Federal Capital Territory, Nigeria</p>
-                                <p><b>Telephone:</b> 0191 637 5081</p>
-                                <p><b>Email: </b> <Link to={"mailto:contact@myzysk.com"}>contact@myzysk.com</Link> </p>
+                            <div className="md:w-1/2 ">
+                                <div className="w-4/5">
+                                    <p>Zysk Group is a global leader in delivering cutting-edge technology,
+                                        food innovation, real estate solutions, and investment opportunities.
+                                    </p>
+                                </div>
                             </div>
                             <div className="md:w-1/2">
                                 <p className='uppercase manrope mb-3'>Newsletter</p>
@@ -54,7 +59,7 @@ const Footer = () => {
                             <ul className="md:flex text-center">
                                 {navLinks.map((each) => (
                                     <li key={each.id} className='group text-tertiary md:w-[fit-content] text-lg font-normal relative pb- mr-3'>
-                                        <a href={each.link} className='tracking-[0.1rem]'>{each.text.toUpperCase()}</a>
+                                        <a href={toggleNav ? each.link : "/"} className='tracking-[0.1rem]'>{each.text.toUpperCase()}</a>
                                         <div className="absolute bottom-0 w-[0px] transition-all group-hover:w-full pt-[2px] bg-white"></div>
                                     </li>
                                 ))}
@@ -70,7 +75,7 @@ const Footer = () => {
                         </div> */}
                         <div className="flex justify-between">
                             <div className="flex">© {date.getFullYear()} Zysk Group Limited</div>
-                            <p className="flex">Website by <Link className='hover:text-alt' to={""}> Renzokins </Link></p>
+                            <p className="flex">Website by <Link className='hover:text-alt ml-1' to={"https://renzokins.com"}> Renzokins </Link></p>
                         </div>
                     </div>
                 </div>

@@ -54,7 +54,7 @@ const CompanySection = () => {
     return (
         <div id='service'>
             <div className="container">
-                <h3 className="text-center text-2xl md:text-3xl playfair text-tertiary">Our Companies:</h3>
+                <h3 className="text-center text-2xl md:text-3xl playfair text-secondary">Our Companies:</h3>
                 {/* <div className="flex justify-center my-8">
                     <p className="text-center md:w-3/4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit reiciendis possimus praesentium, optio vero! Praesentium omnis, sed labore, quod inventore magni officiis eius temporibus libero soluta sit totam? Cum.</p>
                 </div> */}

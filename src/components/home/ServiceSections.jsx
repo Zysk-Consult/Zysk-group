@@ -5,7 +5,7 @@ const ServiceSections = () => {
     return (
         <div className='bg-black/30 py-16 mb-16'>
             <div className="container">
-                <h3 className="text-center text-4xl mb-12">Our Services</h3>
+                <h3 className="text-center text-4xl text-secondary playfair mb-12">Our Services</h3>
                 <ServiceSlider />
             </div>
         </div>

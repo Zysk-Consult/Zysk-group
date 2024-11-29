@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { navLinks } from '../../utils/constant'
 import NavItem from './NavItem'
 import MobileNav from './MobileNav'
+import { ResourceContext } from '../../utils/ResourceContext'
 
 const NavbarComponent = () => {
+  const { toggleNav } = useContext(ResourceContext);
   return (
     <div className=' bg-alt '>
       <div className='bg-black/20 py-6'>
@@ -16,12 +18,12 @@ const NavbarComponent = () => {
                 <ul className='hidden md:flex'>
                   {navLinks.map((each, i) => {
                     return (
-                      <NavItem key={each.id} each={each} />
+                      <NavItem key={each.id} each={each} navToggle={toggleNav} />
                     )
                   })}
                 </ul>
                 <div className="block md:hidden">
-                  <MobileNav />
+                  <MobileNav navToggle={toggleNav} />
                 </div>
               </nav>
             </div>
