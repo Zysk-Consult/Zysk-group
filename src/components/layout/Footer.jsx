@@ -36,8 +36,8 @@ const Footer = () => {
                     <div className="container playfair">
                         <div className="md:flex mb-5">
                             <div className="md:w-1/2 ">
-                                <div className="w-4/5">
-                                    <div className="mb-5">
+                                <div className="md:w-4/5">
+                                    <div className="mb-5 flex justify-center">
                                         <div className="w-[70px]">
                                             <Link to={"/"}>
                                                 <img src={logo} alt="" />
@@ -49,7 +49,7 @@ const Footer = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="md:w-1/2">
+                            <div className="md:w-1/2 mt-10 md:mt-0">
                             <h5 className='text-2xl font-semibold text-tertiary playfair mb-4'>STAY CONNECTED</h5>
                                 <p className='uppercase manrope mb-3'>Newsletter</p>
                                 <div className=" md:w-4/5">
