@@ -5,6 +5,8 @@ import { navLinks } from '../../utils/constant'
 import { FaFacebook, FaLinkedin, FaTelegram } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { ResourceContext } from '../../utils/ResourceContext'
+import logo from "../../assets/png/logo.png";
+
 const date = new Date();
 const Footer = () => {
     const { toggleNav } = useContext(ResourceContext);
@@ -35,12 +37,20 @@ const Footer = () => {
                         <div className="md:flex mb-5">
                             <div className="md:w-1/2 ">
                                 <div className="w-4/5">
+                                    <div className="mb-5">
+                                        <div className="w-[70px]">
+                                            <Link to={"/"}>
+                                                <img src={logo} alt="" />
+                                            </Link>
+                                        </div>
+                                    </div>
                                     <p>Zysk Group is a global leader in delivering cutting-edge technology,
                                         food innovation, real estate solutions, and investment opportunities.
                                     </p>
                                 </div>
                             </div>
                             <div className="md:w-1/2">
+                            <h5 className='text-2xl font-semibold text-tertiary playfair mb-4'>STAY CONNECTED</h5>
                                 <p className='uppercase manrope mb-3'>Newsletter</p>
                                 <div className=" md:w-4/5">
                                     <form>
@@ -58,7 +68,7 @@ const Footer = () => {
                         <div className="flex justify-center my-5">
                             <ul className="md:flex text-center">
                                 {navLinks.map((each) => (
-                                    <li key={each.id} className='group text-tertiary md:w-[fit-content] text-lg font-normal relative pb- mr-3'>
+                                    <li key={each.id} className='group text-tertiary  hover:text-secondary md:w-[fit-content] text-lg font-normal relative pb- mr-3'>
                                         <a href={toggleNav ? each.link : "/"} className='tracking-[0.1rem]'>{each.text.toUpperCase()}</a>
                                         <div className="absolute bottom-0 w-[0px] transition-all group-hover:w-full pt-[2px] bg-white"></div>
                                     </li>

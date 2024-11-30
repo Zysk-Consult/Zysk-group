@@ -4,15 +4,22 @@ import { navLinks } from '../../utils/constant'
 import NavItem from './NavItem'
 import MobileNav from './MobileNav'
 import { ResourceContext } from '../../utils/ResourceContext'
+import logo from "../../assets/png/logo.png"
 
 const NavbarComponent = () => {
   const { toggleNav } = useContext(ResourceContext);
   return (
-    <div className=' bg-alt '>
+    <div className='bg-primary'>
       <div className='bg-black/20 py-6'>
         <div className="container text-white">
-          <div className="flex justify-between md:justify-start">
-            <div className="md:w-[25%]"></div>
+          <div className="flex justify-between md:justify-start md:items-center">
+            <div className="md:w-[25%]">
+              <div className="w-[70px]">
+                <Link to={"/"}>
+                  <img src={logo} alt="" />
+                </Link>
+              </div>
+            </div>
             <div className="md:w-[75%]">
               <nav>
                 <ul className='hidden md:flex'>

@@ -9,6 +9,8 @@ import { FaBars } from "react-icons/fa";
 import { navLinks } from "../../utils/constant";
 import { IoMdArrowDropdown } from "react-icons/io";
 import MobileSubLinks from "./MobileSubLinks";
+import logo from "../../assets/png/logo.png"
+import { Link } from "react-router-dom";
 
 export default function MobileNav({ navToggle }) {
   const [open, setOpen] = React.useState(false);
@@ -22,9 +24,11 @@ export default function MobileNav({ navToggle }) {
       <Drawer open={open} placement="right" onClose={closeDrawer} className=" bg-primary text-primary">
         <div className="p-4 bg-black/60 h-full">
           <div className="mb-6 flex items-center justify-between">
-            <Typography variant="h5" className="text-tertiary">
-              Zysk Groups
-            </Typography>
+            <div className="w-[50px]">
+              <Link to={"/"}>
+                <img src={logo} alt="" />
+              </Link>
+            </div>
             <IconButton variant="text" className="text-secondary" onClick={closeDrawer}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

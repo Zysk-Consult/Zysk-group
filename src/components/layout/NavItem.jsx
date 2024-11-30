@@ -18,7 +18,7 @@ const NavItem = ({ each, navToggle }) => {
     return (
         <div>
             <div className='relative playfair' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <li className='group text-tertiary text-lg font-normal relative pb- mr-8'> <a href={navToggle ? each.link : "/"} className='tracking-[0.1rem] flex items-center'>{each.text.toUpperCase()} {each.subNav && <IoMdArrowDropdown />}</a> <div className="absolute bottom-0 w-[0px] transition-all group-hover:w-full pt-[2px] bg-white"></div> </li>
+                <li className='group text-tertiary hover:text-secondary text-lg font-normal relative pb- mr-8'> <a href={navToggle ? each.link : "/"} className='tracking-[0.1rem] flex items-center'>{each.text.toUpperCase()} {each.subNav && <IoMdArrowDropdown />}</a> <div className="absolute bottom-0 w-[0px] transition-all group-hover:w-full pt-[2px] bg-white"></div> </li>
                 {each.subNav && showDropdown && (
                     <ul className='absolute flex flex-col z-[4] bg-primary text-alt  w-auto top-[25px] z-1 p-4 transition-all duration-[5000ms] shadow' style={{ opacity: showDropdown ? 1 : 0, transition: 'opacity 0.3s ease-in-out' }}>
                         {each.subNav.map((sub) => {
