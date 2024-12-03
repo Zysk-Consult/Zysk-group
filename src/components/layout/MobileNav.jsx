@@ -48,17 +48,22 @@ export default function MobileNav({ navToggle }) {
           </div>
           <div>
             <ul className="text-xl text-tertiary">
+              {!navToggle && <li onClick={closeDrawer} className="mb-4 hover:text-secondary">
+                <a href={"/"}>Home</a>
+              </li>}
               {navLinks.map((each) => {
                 if (each.subNav) {
                   return (
                     <li key={each.id}>
                       <MobileSubLinks each={each} />
                     </li>)
-                } else return (
-                  <li onClick={closeDrawer} key={navToggle ? each.id : "/"} className="mb-4 hover:text-secondary">
-                    <a href={each.link}>{each.text}</a>
-                  </li>
-                )
+                } else if (!each.subNav && navToggle) {
+                  return (
+                    <li onClick={closeDrawer} key={navToggle ? each.id : "/"} className="mb-4 hover:text-secondary">
+                      <a href={each.link}>{each.text}</a>
+                    </li>
+                  )
+                } else return null;
               })}
             </ul>
           </div>

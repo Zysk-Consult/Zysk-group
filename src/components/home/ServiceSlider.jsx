@@ -6,6 +6,7 @@ import imag2 from "../../assets/jpg/2.jpg"
 import imag3 from "../../assets/jpg/3.jpg"
 import imag4 from "../../assets/jpg/4.jpg"
 import imag5 from "../../assets/jpg/5.jpg"
+import imag6 from "../../assets/jpg/6.jpg"
 import { useNavigate } from 'react-router-dom';
 
 
@@ -69,7 +70,7 @@ const ServiceSlider = () => {
         },
         {
             id: 6,
-            src: imag5,
+            src: imag6,
             text: "Zysk Group is a multifaceted organization that contributes to the growth and prosperity of communities worldwide.",
             link: "",
             groupTitle: "Zysk Group"
@@ -80,14 +81,14 @@ const ServiceSlider = () => {
         <div className='my-14'>
             <Carousel
                 responsive={responsive}
-                containerClass=""
-                itemClass="px-8 h-full"
+                containerClass="grid"
+                itemClass="md:pr-8"
             >
                 {
                     images.map((each) => (
                         <div key={each.id} className="group h-full bg-white/10 rounded-t-lg">
                             <div className="overflow-hidden rounded-t-lg">
-                                <img src={each.src} className='group-hover:scale-105 transition-all duration-1000' alt="" />
+                                <img src={each.src} className='group-hover:scale-105 transition-all md:h-[400px] w-full duration-1000' alt="" />
                             </div>
                             <div className="p-4 ">
                                 <h4 className='text-2xl font-bold mb-4'>{each.groupTitle}</h4>

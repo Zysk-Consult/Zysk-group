@@ -62,7 +62,7 @@ const ContactSection = () => {
             [e.target.name]: e.target.value,
         });
     };
-    console.log(formData)
+    // console.log(formData)
     return (
         <div id='contact' className='my-12'>
             <div className="container">
@@ -71,8 +71,8 @@ const ContactSection = () => {
                     <div className="md:w-1/2">
                         <div className="md:w-4/5">
                             <h4 className="text-3xl text-secondary mb-5 playfair font-bold">Let's talk</h4>
-                            <p className='mb-4'><b>Location: </b> Constitution Ave, Central Business Dis, Abuja 900211, Federal Capital Territory, Nigeria</p>
-                            <p className='mb-4'><b>Telephone:</b> 0191 637 5081</p>
+                            <p className='mb-4'><b>Location: </b> Constitution Ave, Central Business Dist, Abuja 900211, Federal Capital Territory, Nigeria</p>
+                            <p className='mb-4'><b>Telephone:</b> +234 704 631 5661</p>
                             <p className='mb-4'><b>Email: </b> <Link to={"mailto:contact@myzysk.com"}>contact@myzysk.com</Link> </p>
                         </div>
                     </div>

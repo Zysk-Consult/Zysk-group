@@ -16,9 +16,9 @@ const HeroSection = () => {
                                 innovation, real estate solutions, and investment opportunities.</h6>
                             <div className="flex justify-center">
                                 <div className="group">
-                                    <button className='text-2xl buttonN after:bg-alt before:bg-tertiary hover:text-alt rounded px-12 py-3 rounded-full'>
+                                    <a href='#contact' className='text-2xl buttonN after:bg-alt before:bg-tertiary hover:text-alt rounded px-12 py-3 rounded-full'>
                                         Get in Touch
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
