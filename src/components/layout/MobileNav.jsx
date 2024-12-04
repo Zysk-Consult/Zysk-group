@@ -23,11 +23,14 @@ export default function MobileNav({ navToggle }) {
       <Button className="bg-inherit" onClick={openDrawer}><FaBars size={25} /></Button>
       <Drawer open={open} placement="right" onClose={closeDrawer} className=" bg-primary text-primary">
         <div className="p-4 bg-black/60 h-full">
-          <div className="mb-6 flex items-center justify-between">
-            <div className="w-[50px]">
-              <Link to={"/"}>
-                <img src={logo} alt="" />
-              </Link>
+          <div className="mb-6 flex items-center text-tertiary text-sm justify-between">
+            <div className="mb-6 flex items-center">
+              <div className="w-[50px]">
+                <Link to={"/"}>
+                  <img src={logo} alt="" />
+                </Link>
+              </div>
+              <p className='ml-1'>ZYSK-GROUP</p>
             </div>
             <IconButton variant="text" className="text-secondary" onClick={closeDrawer}>
               <svg

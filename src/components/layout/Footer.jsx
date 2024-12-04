@@ -6,6 +6,7 @@ import { FaFacebook, FaLinkedin, FaTelegram } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { ResourceContext } from '../../utils/ResourceContext'
 import logo from "../../assets/png/logo.png";
+import ScrollToTopButton from '../general/ScrollToTop'
 
 const date = new Date();
 const Footer = () => {
@@ -31,17 +32,21 @@ const Footer = () => {
     ]
     return (
         <footer className='bg-primary text-white'>
+            <ScrollToTopButton />
             <div className="py-1 bg-black/30">
                 <div className="my-12">
                     <div className="container playfair">
                         <div className="md:flex mb-5">
                             <div className="md:w-1/2 ">
                                 <div className="md:w-4/5">
-                                    <div className="mb-5 flex justify-center">
-                                        <div className="w-[70px]">
-                                            <Link to={"/"}>
-                                                <img src={logo} alt="" />
-                                            </Link>
+                                    <div className="mb-5 flex md:block justify-center">
+                                        <div className="mb-5 flex items-center text-tertiary">
+                                            <div className="w-[70px]">
+                                                <Link to={"/"}>
+                                                    <img src={logo} alt="" />
+                                                </Link>
+                                            </div>
+                                            <p className='ml-1'>ZYSK-GROUP</p>
                                         </div>
                                     </div>
                                     <p>Zysk Group is a global leader in delivering cutting-edge technology,
@@ -50,7 +55,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="md:w-1/2 mt-10 md:mt-0">
-                            <h5 className='text-2xl font-semibold text-tertiary playfair mb-4'>STAY CONNECTED</h5>
+                                <h5 className='text-2xl font-semibold text-tertiary playfair mb-4'>STAY CONNECTED</h5>
                                 <p className='uppercase manrope mb-3'>Newsletter</p>
                                 <div className=" md:w-4/5">
                                     <form>

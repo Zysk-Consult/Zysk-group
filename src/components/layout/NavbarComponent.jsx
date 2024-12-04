@@ -13,12 +13,13 @@ const NavbarComponent = () => {
       <div className='bg-black/20 py-6'>
         <div className="container text-white">
           <div className="flex justify-between md:justify-start md:items-center">
-            <div className="md:w-[25%]">
-              <div className="w-[80px]">
-                <Link className='' to={"/"}>
+            <div className="md:w-[25%] flex text-tertiary items-center playfair">
+              <div className="w-[70px]">
+                <Link to={"/"}>
                   <img src={logo} alt="" />
                 </Link>
               </div>
+              <p className='ml-1'>ZYSK-GROUP</p>
             </div>
             <div className="md:w-[75%]">
               <nav>
