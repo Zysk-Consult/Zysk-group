@@ -12,8 +12,11 @@ const HeroSection = () => {
                             <h1 className='text-4xl text-cente md:text-5xl leading-normal playfair'>
                                 Unlocking Opportunities <br /> Across Industries
                             </h1>
-                            <h6 className='my-8 text-alt text-lg'>Zysk Group is a global leader in delivering cutting-edge technology, <br /> food
-                                innovation, real estate solutions, and investment opportunities.</h6>
+                            <h6 className='my-8 text-alt text-lg'>Zysk Group is a global leader in delivering cutting-edge technology, food innovation, real estate solutions, and investment opportunities. With a diversified portfolio of companies, Zysk Group is committed to transforming industries and enriching lives through innovation, excellence, and sustainability. From groundbreaking software solutions crafted by Zysk Technologies, to seamless immigration and job placement services offered by Zysk Consulting, we cater to a wide spectrum of needs.
+
+Our dedication extends to the culinary realm with Zysk Foods, revolutionising food processing to ensure quality and taste. Meanwhile, Zysk Construction and Real Estate is shaping modern living with exceptional residential and commercial spaces. For those seeking robust financial growth, Zysk Capital offers tailored investment opportunities in tangible assets like real estate, bridging global markets with unparalleled expertise.
+
+At Zysk Group, our vision is to empower individuals and businesses alike, fostering a future where innovation and collaboration drive success on a global scale.</h6>
                             <div className="flex justify-center">
                                 <div className="group">
                                     <a href='#contact' className='text-2xl buttonN after:bg-alt before:bg-tertiary hover:text-alt rounded px-12 py-3 rounded-full'>
